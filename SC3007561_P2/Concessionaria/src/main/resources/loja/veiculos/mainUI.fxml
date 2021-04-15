@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loja.veiculos.controllers.MainUIController">
+   <children>
+      <Label layoutX="120.0" layoutY="30.0" text="Concessionária JHR">
+         <font>
+            <Font name="Arial Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="137.0" text="Insira a tela que deseja prosseguir:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVenda" layoutX="88.0" layoutY="214.0" mnemonicParsing="false" onAction="#goToVenda" prefHeight="59.0" prefWidth="121.0" text="Venda">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEstoque" layoutX="240.0" layoutY="214.0" mnemonicParsing="false" onAction="#goToEstoque" prefHeight="59.0" prefWidth="121.0" text="Estoque">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnVendedor" layoutX="392.0" layoutY="214.0" mnemonicParsing="false" onAction="#goToVendedor" prefHeight="59.0" prefWidth="121.0" text="Vendedores">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnEncerrar" layoutX="371.0" layoutY="326.0" mnemonicParsing="false" onAction="#encerrarMain" prefHeight="37.0" prefWidth="142.0" text="Encerrar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReset" layoutX="88.0" layoutY="326.0" mnemonicParsing="false" onAction="#resetarBancoDados" prefHeight="37.0" prefWidth="142.0" text="Reiniciar BD">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

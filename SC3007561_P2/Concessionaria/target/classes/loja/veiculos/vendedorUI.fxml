@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loja.veiculos.controllers.VendedorUIController">
+   <children>
+      <TableView fx:id="table" layoutX="38.0" layoutY="71.0" prefHeight="200.0" prefWidth="524.0">
+        <columns>
+          <TableColumn fx:id="tableId" prefWidth="115.0" text="ID" />
+          <TableColumn fx:id="tableNome" prefWidth="208.0" text="Nome" />
+            <TableColumn fx:id="tableEmail" prefWidth="199.0" text="E-mail" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNome" layoutX="38.0" layoutY="306.0" promptText="Nome" />
+      <TextField fx:id="txtEmail" layoutX="226.0" layoutY="306.0" promptText="E-mail" />
+      <Button fx:id="btnInserir" layoutX="409.0" layoutY="306.0" mnemonicParsing="false" onAction="#inserirVendedor" prefHeight="25.0" prefWidth="149.0" text="Inserir" />
+      <Button fx:id="btnMostrarUm" layoutX="38.0" layoutY="348.0" mnemonicParsing="false" onAction="#mostrarUm" prefHeight="25.0" prefWidth="149.0" text="Mostrar Um" />
+      <Button fx:id="btnAtualizar" layoutX="226.0" layoutY="348.0" mnemonicParsing="false" onAction="#atualizarVendedor" prefHeight="25.0" prefWidth="149.0" text="Atualizar" />
+      <Button fx:id="btnDeletar" layoutX="409.0" layoutY="348.0" mnemonicParsing="false" onAction="#deletarVendedor" prefHeight="25.0" prefWidth="149.0" text="Deletar" />
+      <Label layoutX="216.0" layoutY="14.0" text="Funcionários">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="38.0" layoutY="24.0" mnemonicParsing="false" onAction="#voltarMain" prefHeight="25.0" prefWidth="118.0" text="Voltar" />
+      <Button fx:id="btnMostrar" layoutX="440.0" layoutY="24.0" mnemonicParsing="false" onAction="#mostrarTodos" prefHeight="25.0" prefWidth="118.0" text="Mostrar Todos" />
+   </children>
+</AnchorPane>

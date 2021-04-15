@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loja.veiculos.controllers.EstoqueUIController">
+   <children>
+      <TableView fx:id="table" layoutX="27.0" layoutY="60.0" prefHeight="233.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="tableId" prefWidth="57.0" text="ID" />
+          <TableColumn fx:id="tableMarca" prefWidth="97.0" text="Marca" />
+            <TableColumn fx:id="tableModelo" prefWidth="99.0" text="Modelo" />
+            <TableColumn fx:id="tableAno" prefWidth="63.0" text="Ano" />
+            <TableColumn fx:id="tablePreco" prefWidth="71.0" text="Preço" />
+            <TableColumn fx:id="tableQuantidade" prefWidth="53.0" text="Qtde" />
+            <TableColumn fx:id="tableQuantidadePortas" prefWidth="97.0" text="Qtde de Portas" />
+        </columns>
+      </TableView>
+      <Label layoutX="231.0" layoutY="7.0" text="Veículos">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMarca" layoutX="27.0" layoutY="306.0" prefHeight="25.0" prefWidth="97.0" promptText="Marca" />
+      <TextField fx:id="txtModelo" layoutX="134.0" layoutY="306.0" prefHeight="25.0" prefWidth="123.0" promptText="Modelo" />
+      <TextField fx:id="txtAno" layoutX="267.0" layoutY="306.0" prefHeight="25.0" prefWidth="60.0" promptText="Ano" />
+      <TextField fx:id="txtPreco" layoutX="338.0" layoutY="306.0" prefHeight="25.0" prefWidth="60.0" promptText="Preço" />
+      <TextField fx:id="txtQuantidade" layoutX="411.0" layoutY="306.0" prefHeight="25.0" prefWidth="60.0" promptText="Qtde" />
+      <TextField fx:id="txtQuantidadePortas" layoutX="483.0" layoutY="306.0" prefHeight="25.0" prefWidth="84.0" promptText="Qtd de Portas" />
+       <Button fx:id="btnInserir" layoutX="444.0" layoutY="335.0" mnemonicParsing="false" onAction="#inserirVeiculo" prefHeight="25.0" prefWidth="130.0" text="Inserir Veículo" />
+       <Button fx:id="btnAtualizar" layoutX="303.0" layoutY="335.0" mnemonicParsing="false" onAction="#removerVeiculo" prefHeight="25.0" prefWidth="130.0" text="Remover Veículo" />
+       <Button fx:id="btnRemover" layoutX="164.0" layoutY="335.0" mnemonicParsing="false" onAction="#atualizarVeiculo" prefHeight="25.0" prefWidth="130.0" text="Atualizar Veículo" />
+       <Button fx:id="btnMostrarUm" layoutX="27.0" layoutY="335.0" mnemonicParsing="false" onAction="#mostrarUmVeiculo" prefHeight="25.0" prefWidth="130.0" text="Mostrar Um Veículo" />
+      <Button layoutX="27.0" layoutY="21.0" mnemonicParsing="false" onAction="#voltarMain" prefHeight="25.0" prefWidth="123.0" text="Voltar" />
+      <Button fx:id="btnTodos" layoutX="438.0" layoutY="21.0" mnemonicParsing="false" onAction="#mostrarTodosVeiculos" prefHeight="25.0" prefWidth="123.0" text="Mostrar Todos" />
+   </children>
+</AnchorPane>

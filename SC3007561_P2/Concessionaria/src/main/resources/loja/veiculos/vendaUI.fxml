@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loja.veiculos.controllers.VendaUIController">
+   <children>
+      <Label layoutX="259.0" layoutY="14.0" text="Venda">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="32.0" layoutY="60.0" prefHeight="200.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="tableIdVenda" prefWidth="70.0" text="ID Venda" />
+          <TableColumn fx:id="tableIdVeiculo" minWidth="1.0" prefWidth="69.0" text="ID Veiculo" />
+            <TableColumn fx:id="tableTipoPagamento" prefWidth="119.0" text="Tipo Pagamento" />
+            <TableColumn fx:id="tableValor" prefWidth="64.0" text="Valor" />
+            <TableColumn fx:id="tableValorParcela" prefWidth="82.0" text="Valor Parcela" />
+            <TableColumn fx:id="tableNumeroParcela" prefWidth="61.0" text="Parcelas" />
+            <TableColumn fx:id="tableVendedor" prefWidth="76.0" text="Vendedor" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtIdVeiculo" layoutX="32.0" layoutY="287.0" prefHeight="25.0" prefWidth="165.0" promptText="ID Veículo" />
+      <TextField fx:id="txtParcelas" layoutX="298.0" layoutY="287.0" prefHeight="25.0" prefWidth="130.0" promptText="Parcelas" />
+      <TextField fx:id="txtVendedor" layoutX="444.0" layoutY="287.0" prefHeight="25.0" prefWidth="130.0" promptText="Vendedor" />
+      <Button fx:id="btnVenda" layoutX="444.0" layoutY="335.0" mnemonicParsing="false" onAction="#inserirVenda" prefHeight="25.0" prefWidth="130.0" text="Inserir Venda" />
+      <CheckBox fx:id="ckBoxParcelado" layoutX="207.0" layoutY="291.0" mnemonicParsing="false" onAction="#ocultarParcela" onMousePressed="#ocultarParcela" prefHeight="17.0" prefWidth="87.0" text="Parcelado" />
+      <Button fx:id="btnRemoverVenda" layoutX="303.0" layoutY="335.0" mnemonicParsing="false" onAction="#removerTabela" prefHeight="25.0" prefWidth="130.0" text="Limpar Tabela" />
+      <Button fx:id="btnAtualizarVenda" layoutX="164.0" layoutY="335.0" mnemonicParsing="false" onAction="#atualizarVenda" prefHeight="25.0" prefWidth="130.0" text="Atualizar Venda" />
+      <Button fx:id="btnMostrarUmaVenda" layoutX="27.0" layoutY="335.0" mnemonicParsing="false" onAction="#mostrarUmaVenda" prefHeight="25.0" prefWidth="130.0" text="Mostrar Uma Venda" />
+      <Button layoutX="29.0" layoutY="20.0" mnemonicParsing="false" onAction="#voltarMain" prefHeight="25.0" prefWidth="130.0" text="Voltar" />
+      <Button fx:id="btnMostrar" layoutX="444.0" layoutY="20.0" mnemonicParsing="false" onAction="#mostrarTodos" prefHeight="25.0" prefWidth="130.0" text="Mostrar Todos" />
+      <Button fx:id="btnDetalhes" layoutX="171.0" layoutY="20.0" mnemonicParsing="false" onAction="#mostrarDetalhes" prefHeight="25.0" prefWidth="71.0" text="Detalhes" />
+   </children>
+</AnchorPane>
